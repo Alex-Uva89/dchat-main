@@ -1,0 +1,69 @@
+.inputBox{
+    width: 700px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-top: 1px solid rgb(225, 225, 225);
+  }
+  
+  .msgInput{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .msgInput:focus{
+    outline: none;
+  }
+
+  .sendButton{
+    
+    border: none;
+    margin: 0;
+    padding:13px;
+    width: auto;
+    height: 100%;
+    overflow: visible;
+
+    background: inherit;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+  }
+
+  .sendButton:disabled{
+    opacity: 0.5;
+  }
+
+  .sendButton img{
+    
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .inputBox{
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;      
+    }
+  }
+  

@@ -1,0 +1,56 @@
+.messageBox{
+    width: 700px;
+    height: 425px;
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 20px;
+    font-size: 0.9rem;
+ 
+  }
+  
+  .message{
+    padding: 30px 50px 8px 10px;
+    border-radius: 0.9rem;
+    max-width: 400px;
+    position: relative;
+    font-weight: 300;
+    line-height: 1.2rem;
+  }
+  
+  .received{
+      background-color: rgb(245, 245, 245);
+  }
+  
+  .sent{
+      background-color: rgb(245, 245, 245);
+      align-self: flex-end;
+  }
+  
+  .msgTime{
+    position: absolute;
+    bottom: 2px;
+    right: 9px;
+    font-size: 0.6rem;
+    opacity: 0.4;
+    line-height: 1rem;
+  }
+  
+  .msgSender{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 1;
+    font-weight: 400;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .messageBox{
+      width: 100%;
+      height: calc(100% - 75px);
+    }
+  }
+  

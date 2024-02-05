@@ -1,0 +1,22 @@
+.statusBar{
+    width: 700px;
+    height: 25px;
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .statusBar span{
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .statusBar{
+      width: 100%;
+      
+    }
+  }
+  
